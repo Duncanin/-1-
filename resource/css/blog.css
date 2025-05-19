@@ -1,0 +1,80 @@
+@import url("/resource/css/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+*, *::before, *::after{
+	box-sizing: border-box;
+    }
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.wrap {
+    max-width: 1296px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+/* 下列各區塊自行插入CSS */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+}
+.banner img, .banner .new-article {
+    max-width: 50%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 948/640;
+}
+.hashtag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+}
+.hashtag a {
+    text-decoration: none;
+    color: #0027D5;
+    font-size: 24px;
+}
+.hashtag .new-article-tag {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background: #0027D5;
+    border-radius: 30px;
+    padding: 6px 12px;
+}
+h2 {
+    font-size: 28px;
+    padding-bottom: 8px;
+}
+p {
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+button {
+    margin-top: 16px;
+    background: #FFFFFF;
+    color: rgba(75, 75, 75, 1);
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    padding: 8px 16px;
+}
+button:hover {
+    background: #0027D5;
+    color: #FFFFFF;
+}
