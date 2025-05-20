@@ -80,8 +80,8 @@ button:hover {
 }
 /* ===== 叮咚 footer ===== */
 .link {
-  margin: 0 auto;
-  max-width: 1920px;
+  /* margin: 0 auto;
+  max-width: 1920px; */
   background-color: #fbfbfb;
   padding: 5rem 0.75rem;
   box-sizing: border-box;
