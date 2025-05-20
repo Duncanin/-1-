@@ -1,80 +1,203 @@
 @import url("/resource/css/reset.css");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
 
-*, *::before, *::after{
-	box-sizing: border-box;
-    }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
-    font-family: "Noto Sans TC", sans-serif;
-    font-weight: 500;
-    line-height: 1.5;
-    font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 16px;
 }
 .wrap {
-    max-width: 1296px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 /* 下列各區塊自行插入CSS */
 
 .banner {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
 }
-.banner img, .banner .new-article {
-    max-width: 50%;
+.banner img,
+.banner .new-article {
+  max-width: 50%;
 }
 
 .banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-    aspect-ratio: 948/640;
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 948/640;
 }
 .hashtag {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding-top: 4px;
-    padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 4px;
+  padding-bottom: 8px;
 }
 .hashtag a {
-    text-decoration: none;
-    color: #0027D5;
-    font-size: 24px;
+  text-decoration: none;
+  color: #0027d5;
+  font-size: 24px;
 }
 .hashtag .new-article-tag {
-    font-size: 16px;
-    font-weight: 400;
-    color: #FFFFFF;
-    background: #0027D5;
-    border-radius: 30px;
-    padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  background: #0027d5;
+  border-radius: 30px;
+  padding: 6px 12px;
 }
 h2 {
-    font-size: 28px;
-    padding-bottom: 8px;
+  font-size: 28px;
+  padding-bottom: 8px;
 }
 p {
-    
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 button {
-    margin-top: 16px;
-    background: #FFFFFF;
-    color: rgba(75, 75, 75, 1);
-    display: inline-block;
-    border: 1px solid #000000;
-    border-radius: 30px;
-    padding: 8px 16px;
+  margin-top: 16px;
+  background: #ffffff;
+  color: rgba(75, 75, 75, 1);
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  padding: 8px 16px;
 }
 button:hover {
-    background: #0027D5;
-    color: #FFFFFF;
+  background: #0027d5;
+  color: #ffffff;
 }
+
+/* 蜜桃果茶的css START */
+
+.sectionbanner-peachtea-display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid #6c757d;
+}
+
+.sectionbanner-peachtea-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: center;
+  gap: 24px;
+  padding: 80px 120px 80px 0px;
+  width: 100%;
+  max-width: 948px;
+}
+
+.sectionbanner-peachtea-imgdiv {
+  max-width: 948px;
+}
+.sectionbanner-peachtea-img {
+  display: block;
+  width: 100%;
+}
+
+.sectionbanner-peachtea-categories {
+  color: #0027d5;
+  line-height: 150%;
+}
+.sectionbanner-peachtea-radiusblue {
+  border-radius: 40px;
+  color: white;
+  background-color: #0027d5;
+  padding: 6px 12px;
+  width: 88px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sectionbanner-peachtea-cardtop {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sectionbanner-peachtea-fontsize1 {
+  font-size: 28px;
+}
+.sectionbanner-peachtea-fontsize2 {
+  font-size: 24px;
+}
+.sectionbanner-peachtea-fontsize3 {
+  font-size: 16px;
+}
+.sectionbanner-peachtea-card {
+  width: 100%;
+  max-width: 636px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionbanner-peachtea-text {
+  width: 100%;
+  max-width: 636px;
+  line-height: 150%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  box-sizing: border-box;
+}
+.sectionbanner-peachtea-readmore {
+  width: 96px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  color: #4b4b4b;
+  background-color: white;
+  padding: 8px 16px;
+  border: 1px solid black;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.sectionbanner-peachtea-readmore:hover {
+  background-color: blue;
+  color: white;
+}
+
+.sectionbanner-peachtea-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.sub-title {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .sectionbanner-peachtea-display {
+    flex-direction: column;
+  }
+  .sectionbanner-peachtea-right {
+    padding: 48px 12px;
+  }
+}
+
+/* 蜜桃果茶的css END */
