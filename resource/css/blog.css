@@ -78,11 +78,6 @@ button:hover {
     background: #0027D5;
     color: #FFFFFF;
 }
-@media (max-width: 375px) {
-    .banner {
-        flex-direction: column;
-    }
-}
 
 /* ===== 叮咚 footer ===== */
 .link {
