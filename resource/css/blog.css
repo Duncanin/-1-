@@ -1,4 +1,4 @@
-@import url("/resource/css/reset.css");
+@import url("resource/css/reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
 *, *::before, *::after{
@@ -78,6 +78,12 @@ button:hover {
     background: #0027D5;
     color: #FFFFFF;
 }
+@media (max-width: 375px) {
+    .banner {
+        flex-direction: column;
+    }
+}
+
 /* ===== 叮咚 footer ===== */
 .link {
   margin: 0 auto;
