@@ -1,4 +1,4 @@
-@import url("/resource/css/reset.css");
+@import url("resource/css/reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
 *,
@@ -190,6 +190,7 @@ button:hover {
   transform: translateY(-50%);
 }
 
+=======
 .search .searchIcon:hover {
   font-size: 30px;
 }
@@ -328,6 +329,8 @@ button:hover {
 .pagination .dots {
   pointer-events: none;
 }
+
+
 
 /* ===== 叮咚 footer ===== */
 .link {
