@@ -1,88 +1,341 @@
 @import url("resource/css/reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
-*, *::before, *::after{
-	box-sizing: border-box;
-    }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: "Noto Sans TC", sans-serif;
-    font-weight: 500;
-    line-height: 1.5;
-    font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 16px;
 }
+
 .wrap {
-    max-width: 1296px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
+
 /* 下列各區塊自行插入CSS */
+nav {
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  list-style: none;
+  margin: 0;
+}
+nav ul li:first-child {
+  margin-right: 40px;
+}
+nav ul a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+header {
+  position: relative;
+}
+header .hraderBanner {
+  display: flex;
+}
+header .hraderBanner div:first-child {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+}
+header .hraderBanner div:last-child {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+}
+header .headerText {
+  top: 300px;
+  left: 914px;
+  position: absolute;
+}
+header .headerText h1 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 120px;
+  font-weight: 900;
+  color: #0027d5;
+}
+header .headerText p {
+  color: #0027d5;
+  font-weight: 700;
+  font-size: 28px;
+}
+
 
 .banner {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
 }
-.banner img, .banner .new-article {
-    max-width: 50%;
+
+.banner img,
+.banner .new-article {
+  max-width: 50%;
 }
 
 .banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-    aspect-ratio: 948/640;
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 948/640;
 }
+
 .hashtag {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding-top: 4px;
-    padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 4px;
+  padding-bottom: 8px;
 }
+
 .hashtag a {
-    text-decoration: none;
-    color: #0027D5;
-    font-size: 24px;
+  text-decoration: none;
+  color: #0027D5;
+  font-size: 24px;
 }
+
 .hashtag .new-article-tag {
-    font-size: 16px;
-    font-weight: 400;
-    color: #FFFFFF;
-    background: #0027D5;
-    border-radius: 30px;
-    padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  background: #0027D5;
+  border-radius: 30px;
+  padding: 6px 12px;
 }
+
 h2 {
-    font-size: 28px;
-    padding-bottom: 8px;
+  font-size: 28px;
+  padding-bottom: 8px;
 }
+
 p {
-    
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
+
 button {
-    margin-top: 16px;
-    background: #FFFFFF;
-    color: rgba(75, 75, 75, 1);
-    display: inline-block;
-    border: 1px solid #000000;
-    border-radius: 30px;
-    padding: 8px 16px;
+  margin-top: 16px;
+  background: #FFFFFF;
+  color: rgba(75, 75, 75, 1);
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  padding: 8px 16px;
 }
+
 button:hover {
-    background: #0027D5;
-    color: #FFFFFF;
+  background: #0027D5;
+  color: #FFFFFF;
 }
+
+/* ===== William main ===== */
+
+.blog_main {
+  margin: 0 auto;
+  border-top: 1px solid #6C757D;
+  border-bottom: 1px solid #6C757D;
+  padding: 80px 12px;
+  background: #FBFBFB;
+}
+
+.search {
+  max-width: 1320px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.search .searchInput {
+  width: 416px;
+  height: 56px;
+  font-size: 20px;
+  border: 1px solid #4B4B4B;
+  border-radius: 40px;
+  padding: 16px 48px 16px 60px;
+}
+
+.search .searchIcon {
+  font-size: 24px;
+  color: #4B4B4B;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+=======
+.search .searchIcon:hover {
+  font-size: 30px;
+}
+
+.container_card {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  gap: 80px 12px;
+}
+
+.container_card .card {
+  width: 416px;
+}
+
+.container_card .card .date {
+  margin: 8px 0;
+}
+
+.container_card .card a {
+  text-decoration: none;
+}
+
+.container_card .card .tag_1,
+.container_card .card .tag_2 {
+  color: #0027D5;
+  font-size: 24px;
+  margin-right: 3px;
+}
+
+.container_card .card .tag_important {
+  width: 88px;
+  background: #0027D5;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 40px;
+}
+
+.container_card .card h3 {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 8px 0;
+}
+
+.container_card .card .content {
+  color: #4B4B4B;
+  /* line-height: 1.5; */
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.container_card .card .readMore {
+  display: block;
+}
+
+.container_card .card .readMore_css {
+  text-decoration: none;
+  display: inline-block;
+  color: #4B4B4B;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 8px 16px;
+}
+
+.container_card .card .readMore_css:hover {
+  background: black;
+  color: white;
+}
+
+@media (max-width: 1300px) {
+  .container_card {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .blog_main {
+    padding: 64px 12px;
+  }
+
+  .container_card {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 370px) {
+
+  .tag_1,
+  .tag_2,
+  .tag_important {
+    display: block;
+  }
+}
+
+.pagination {
+  width: 328px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 8px 20px;
+  font-weight: 500;
+  background: #FFFFFF;
+  border-radius: 40px;
+  color: #4B4B4B;
+}
+
+.pagination a {
+  text-decoration: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.pagination a:hover {
+  background: #EAEAEA;
+}
+
+.pagination a.active {
+  color: #0027D5;
+  font-weight: bold;
+}
+
+.pagination .arrow {
+  font-size: 24px;
+}
+
+.pagination .dots {
+  pointer-events: none;
+}
+
+
 
 /* ===== 叮咚 footer ===== */
 .link {
-  margin: 0 auto;
-  max-width: 1920px;
+  /* margin: 0 auto;
+  max-width: 1920px; */
   background-color: #fbfbfb;
   padding: 5rem 0.75rem;
   box-sizing: border-box;
@@ -91,7 +344,8 @@ button:hover {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5;
-  display: none; /* 預設隱藏 */
+  display: none;
+  /* 預設隱藏 */
 }
 
 @media (min-width: 768px) {
@@ -107,7 +361,8 @@ button:hover {
   align-items: center;
   justify-content: space-around;
   gap: 1.5rem;
-  flex-wrap: wrap; /* 小螢幕時換行 */
+  flex-wrap: wrap;
+  /* 小螢幕時換行 */
 }
 
 /* 郵箱連結 */
@@ -116,7 +371,8 @@ button:hover {
   color: inherit;
   text-decoration: none;
   transition: text-decoration 0.3s ease;
-  white-space: nowrap; /* 防止換行 */
+  white-space: nowrap;
+  /* 防止換行 */
 }
 
 .social__email:hover {
@@ -167,4 +423,3 @@ button:hover {
   height: 3rem;
   display: block;
 }
-
